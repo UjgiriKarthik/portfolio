@@ -123,36 +123,22 @@ const TechStackSection = () => {
         </div>
 
         {/* Interactive Skills */}
-        <div className="mt-16 reveal">
-          <div className="glass-card p-8">
+        <div className="mt-16 reveal px-4">
+          <div className="glass-card p-8 bg-white/10 backdrop-blur-md rounded-2xl shadow-lg">
             <h3 className="text-2xl font-bold mb-10 mt-6 text-center text-white">
               Interactive Skills Overview
             </h3>
 
-            {/* First Row */}
-            <div className="flex justify-between mb-4 max-w-5xl mx-auto w-full">
+            {/* Skills Grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
               {[
-                "React", "Node.js", "MongoDB", "Express", "JavaScript", "Python"
-              ].map((skill, index) => (
-                <div
-                  key={skill}
-                  className="flex-1 text-center mx-5 px-1 py-3 rounded-xl bg-white/5 backdrop-blur text-sm font-medium text-white shadow transition duration-300 hover:scale-105"
-                  style={{ animationDelay: `${index * 0.05}s` }}
-                >
-                  {skill}
-                </div>
-              ))}
-            </div>
-
-            {/* Second Row */}
-            <div className="flex justify-between max-w-5xl mx-auto w-full">
-              {[
+                "React", "Node.js", "MongoDB", "Express", "JavaScript", "Python",
                 "HTML5", "CSS3", "Git", "SQL", "Bootstrap", "GitHub"
               ].map((skill, index) => (
                 <div
                   key={skill}
-                  className="flex-1 text-center mb-9 mx-5 px-1 py-3 rounded-xl bg-white/5 backdrop-blur text-sm font-medium text-white shadow transition duration-300 hover:scale-105"
-                  style={{ animationDelay: `${(index + 6) * 0.05}s` }}
+                  className="text-center px-2 py-3 rounded-xl bg-white/5 backdrop-blur text-sm sm:text-base font-medium text-white shadow transition duration-300 hover:scale-105"
+                  style={{ animationDelay: `${index * 0.05}s` }}
                 >
                   {skill}
                 </div>
@@ -160,6 +146,7 @@ const TechStackSection = () => {
             </div>
           </div>
         </div>
+
 
 
 
