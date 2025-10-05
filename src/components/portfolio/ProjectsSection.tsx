@@ -10,8 +10,8 @@ const ProjectsSection = () => {
       description: "A full-stack habit tracking application built with the MERN stack. Features user authentication, habit management, progress tracking, and data visualization to help users maintain consistency in their daily routines.",
       image: projectMern,
       technologies: ["React", "Node.js", "Express", "MongoDB", "JWT"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/UjgiriKarthik/Be-Consistent",
+      live: "https://be-consistent.vercel.app",
       gradient: "bg-gradient-primary"
     },
     {
